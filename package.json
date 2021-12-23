@@ -1,0 +1,22 @@
+{
+  "name": "doctorate-selection-iitbbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaushikdey647/doctorate-selection-iitbbs.git"
+  },
+  "author": "Kaushik Dey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaushikdey647/doctorate-selection-iitbbs/issues"
+  },
+  "homepage": "https://github.com/Kaushikdey647/doctorate-selection-iitbbs#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
