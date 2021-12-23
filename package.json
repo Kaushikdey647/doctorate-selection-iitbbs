@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Kaushikdey647/doctorate-selection-iitbbs#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "slugify": "^1.6.4"
   }
 }
