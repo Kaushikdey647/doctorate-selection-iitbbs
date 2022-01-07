@@ -1,0 +1,4 @@
+pandasgui
+pandas
+matplotlib
+numpy
