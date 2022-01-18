@@ -7,6 +7,7 @@
   - [1.2. Introduction](#12-introduction)
   - [1.3. How to use](#13-how-to-use)
   - [1.4. Structure of The App](#14-structure-of-the-app)
+    - [File Structure](#file-structure)
   - [1.5. Database](#15-database)
     - [1.5.1. Description](#151-description)
     - [1.5.2. Proposed Schema](#152-proposed-schema)
@@ -29,6 +30,24 @@ The app will be divided into two parts
 
 - API: A server api built on express
 - Client: A user interface based on react
+
+### File Structure
+
+```bash
+server.js
+package.json
+.gitignore
+    |__ models/
+        |__ user.js
+        |__ kitten.js
+        |__ puppy.js
+        |__ anyOtherSchemas.js
+    |__ routes/
+        |__ authRoutes.js
+        |__ puppyRoutes.js
+        |__ kittenRoutes.js
+        |__ anyOtherRoutes.js
+```
 
 ## 1.5. Database
 
