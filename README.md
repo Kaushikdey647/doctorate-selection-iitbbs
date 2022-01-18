@@ -38,7 +38,7 @@ The database will be served by mongo atlas. It is expected to be a free cluster 
   
 ## 1.6. Todo List
 
-- [ ] Create the base api
+- [x] Create the base api
   - [x] Create the base express app
   - [x] Connect to atlas server using mongoose
   - [ ] Create the database schema
