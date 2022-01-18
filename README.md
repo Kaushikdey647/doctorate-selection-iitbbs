@@ -8,13 +8,20 @@
   - [1.3. How to use](#13-how-to-use)
   - [1.4. Structure of The App](#14-structure-of-the-app)
   - [1.5. Database](#15-database)
-    - [Description](#description)
-    - [Proposed Schema](#proposed-schema)
+    - [1.5.1. Description](#151-description)
+    - [1.5.2. Proposed Schema](#152-proposed-schema)
   - [1.6. Todo List](#16-todo-list)
 
 ## 1.2. Introduction
 
 ## 1.3. How to use
+
+1. Either download this repository via this [link](https://github.com/Kaushikdey647/doctorate-selection-iitbbs/archive/refs/heads/main.zip) or clone this repository using
+   `git clone https://github.com/Kaushikdey647/doctorate-selection-iitbbs`
+2. Make sure you have [node](https://nodejs.org/) installed on your system.
+3. Open up your command line/terminal
+4. Run `npm start`
+5. Open postman and redirect all requests to [http://localhost:9000](http://localhost:9000)
 
 ## 1.4. Structure of The App
 
@@ -25,23 +32,23 @@ The app will be divided into two parts
 
 ## 1.5. Database
 
-### Description
+### 1.5.1. Description
 
-The database will be served by mongo atlas. It is expected to be a free cluster with about 512mb of space and a capacity of max 500 requests hadndled at a time
+The database will be served by mongo atlas. It is expected to be a free cluster with about **512 MB** of space and a capacity of max **500 requests** hadndled at a time
 
-### Proposed Schema
+### 1.5.2. Proposed Schema
 
-- creds:
+- **creds**:
   - email,
   - password,
-- tenth:
+- **tenth**:
   - Institute,
   - Year,
   - Division,
   - Percentage,
   - CGPA,
   - CGPAMax
-- twelfth:
+- **twelfth**:
   - Specialization,
   - Institute,
   - Year,
@@ -49,7 +56,7 @@ The database will be served by mongo atlas. It is expected to be a free cluster 
   - Percentage,
   - CGPA,
   - CGPAMax
-- bio:
+- **bio**:
   - Name,
   - Type,
   - sponsoredAgency,
@@ -60,8 +67,7 @@ The database will be served by mongo atlas. It is expected to be a free cluster 
   - Category,
   - PWD,
   - MTechThroughGate
-  
-- gate:
+- **gate**:
   - Discipline,
   - Score,
   - Percentile,
@@ -69,7 +75,7 @@ The database will be served by mongo atlas. It is expected to be a free cluster 
   - Year,
   - Validity
   
-- masters:
+- **masters**:
   - Programme,
   - Specialization,
   - Institute,
@@ -79,7 +85,7 @@ The database will be served by mongo atlas. It is expected to be a free cluster 
   - CGPA,
   - CGPAMax
   
-- bachelors:
+- **bachelors**:
   - Programme,
   - Specialization,
   - Institute,
@@ -89,18 +95,18 @@ The database will be served by mongo atlas. It is expected to be a free cluster 
   - CGPA,
   - CGPAMax
   
-- net:
+- **net**:
   - Discipline,
   - Year
   
-- experience:
+- **experience**:
   - Employer,
   - Designation,
   - PeriodBegin,
   - PeriodMonths,
   - Nature
   
-- others:
+- **others**:
   - Programme,
   - Institute,
   - Specialization,
