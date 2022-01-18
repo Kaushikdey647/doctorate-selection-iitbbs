@@ -57,85 +57,80 @@ doctorate-selection-iitbbs/
 The database will be served by mongo atlas. It is expected to be a free cluster with about **512 MB** of space and a capacity of max **500 requests** hadndled at a time
 
 ### 1.5.2. Proposed Schema
-
-- **creds**:
-  - email,
-  - password,
-- **tenth**:
-  - Institute,
-  - Year,
-  - Division,
-  - Percentage,
-  - CGPA,
-  - CGPAMax
-- **twelfth**:
-  - Specialization,
-  - Institute,
-  - Year,
-  - Division,
-  - Percentage,
-  - CGPA,
-  - CGPAMax
-- **bio**:
-  - Name,
-  - Type,
-  - sponsoredAgency,
-  - School,
-  - Discipline,
-  - ResearchArea1,
-  - Gender,
-  - Category,
-  - PWD,
-  - MTechThroughGate
-- **gate**:
-  - Discipline,
-  - Score,
-  - Percentile,
-  - Rank,
-  - Year,
-  - Validity
-  
-- **masters**:
-  - Programme,
-  - Specialization,
-  - Institute,
-  - Year,
-  - Division,
-  - Percentage,
-  - CGPA,
-  - CGPAMax
-  
-- **bachelors**:
-  - Programme,
-  - Specialization,
-  - Institute,
-  - Year,
-  - Division,
-  - Percentage,
-  - CGPA,
-  - CGPAMax
-  
-- **net**:
-  - Discipline,
-  - Year
-  
-- **experience**:
-  - Employer,
-  - Designation,
-  - PeriodBegin,
-  - PeriodMonths,
-  - Nature
-  
-- **others**:
-  - Programme,
-  - Institute,
-  - Specialization,
-  - Year,
-  - Division,
-  - Percentage,
-  - CGPA,
-  - CGPAMax
-
+```
+├──**creds**:
+│  ├──email,
+│  └──password,
+├──**tenth**:
+│  ├──Institute,
+│  ├──Year,
+│  ├──Division,
+│  ├──Percentage,
+│  ├──CGPA,
+|  └──CGPAMax
+├──**twelfth**:
+│  ├──Specialization,
+│  ├──Institute,
+│  ├──Year,
+│  ├──Division,
+│  ├──Percentage,
+│  ├──CGPA,
+│  └──CGPAMax
+├──**bio**:
+│  ├──Name,
+│  ├──Type,
+│  ├──sponsoredAgency,
+│  ├──School,
+│  ├──Discipline,
+│  ├──ResearchArea1,
+│  ├──Gender,
+│  ├──Category,
+│  ├──PWD,
+│  └──MTechThroughGate
+├──**gate**:
+│  ├──Discipline,
+│  ├──Score,
+│  ├──Percentile,
+│  ├──Rank,
+│  ├──Year,
+│  └──Validity
+├──**masters**:
+│  ├──Programme,
+│  ├──Specialization,
+│  ├──Institute,
+│  ├──Year,
+│  ├──Division,
+│  ├──Percentage,
+│  ├──CGPA,
+│  └──CGPAMax
+├──**bachelors**:
+│  ├──Programme,
+│  ├──Specialization,
+│  ├──Institute,
+│  ├──Year,
+│  ├──Division,
+│  ├──Percentage,
+│  ├──CGPA,
+│  └──CGPAMax
+├──**net**:
+│  ├──Discipline,
+│  └──Year
+├──**experience**:
+│  ├──Employer,
+│  ├──Designation,
+│  ├──PeriodBegin,
+│  ├──PeriodMonths,
+│  └──Nature
+└──**others**:
+   ├──Programme,
+   ├──Institute,
+   ├──Specialization,
+   ├──Year,
+   ├──Division,
+   ├──Percentage,
+   ├──CGPA,
+   └──CGPAMax
+```
 ## 1.6. Todo List
 
 - [x] Create the base api
