@@ -131,6 +131,10 @@ const net = new mongoose.Schema({
   year: {
     type: Number,
   },
+  cleared: {
+    type: Boolean,
+    required: true
+  }
 })
 
 const creds = new mongoose.Schema({
@@ -146,12 +150,28 @@ const creds = new mongoose.Schema({
 })
 
 const gate = new mongoose.Schema({
-  discipline: {},
-  score: {},
-  percentile: {},
-  rank: {},
-  year: {},
-  validity: {},
+  discipline: {
+    type: String,
+  },
+  score: {
+    type: String,
+  },
+  percentile: {
+    type: Number,
+  },
+  rank: {
+    type: Number,
+  },
+  year: {
+    type: Number,
+  },
+  validity: {
+    type: Number,
+  },
+  cleared: {
+    type: Boolean,
+    required: true,
+  }
 })
 
 const bio = new mongoose.Schema({
@@ -198,19 +218,19 @@ const bio = new mongoose.Schema({
 
 const experience = new mongoose.Schema({
   employer: {
-
+    type: String,
   },
   designation: {
-
+    type: String,
   },
   periodbegin: {
     type: Date
   },
   periodmonths: {
-
+    type: Number,
   },
   nature: {
-
+    type: String,
   },
 })
 
@@ -245,11 +265,9 @@ const studentSchema = new mongoose.Schema({
   },
   gate: {
     type: gate,
-    
   },
   net: {
     type: net,
-    
   },
   others: {
     type: [insti],
