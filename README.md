@@ -34,19 +34,20 @@ The app will be divided into two parts
 ### File Structure
 
 ```bash
-server.js
-package.json
-.gitignore
-    |__ models/
-        |__ user.js
-        |__ kitten.js
-        |__ puppy.js
-        |__ anyOtherSchemas.js
-    |__ routes/
-        |__ authRoutes.js
-        |__ puppyRoutes.js
-        |__ kittenRoutes.js
-        |__ anyOtherRoutes.js
+
+doctorate-selection-iitbbs/
+├── node_modules/             #Contains essential npm modules
+├── api/                      #The Express App
+│  ├── assets                 #DEPCR: Image Assets
+│  ├── controllers            #Controller Scripts for different requests
+│  ├── models                 #Mongo Schema models
+│  ├── pages                  #HTML Resources
+│  ├── py_side_chick          #Notebook Version (Check This one out)
+│  ├── routes                 #Contains Route Handlers   
+│  └── custom_modules         #contains misc. scripts
+├── package.json
+├── package-lock.json
+└── README.md
 ```
 
 ## 1.5. Database
