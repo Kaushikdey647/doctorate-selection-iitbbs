@@ -100,6 +100,19 @@ TO HERE
 */
 
 //schema for institute details
+
+const creds = new mongoose.Schema({
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+})
+
 const insti = new mongoose.Schema({
   programme: {
     type: String,
@@ -135,18 +148,6 @@ const net = new mongoose.Schema({
     type: Boolean,
     required: true
   }
-})
-
-const creds = new mongoose.Schema({
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  password: {
-    type: String,
-    required: true,
-  },
 })
 
 const gate = new mongoose.Schema({
