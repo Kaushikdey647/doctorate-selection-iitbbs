@@ -136,7 +136,7 @@ The database will be served by mongo atlas. It is expected to be a free cluster 
 - [x] Create the base api
   - [x] Create the base express app
   - [x] Connect to atlas server using mongoose
-  - [ ] Create the database schema
+  - [x] Create the database schema
   - [ ] Upload the data and give generic emails/passwords
   - [ ] Configure Routes for login and register
     - [ ] Configure the Login Route
